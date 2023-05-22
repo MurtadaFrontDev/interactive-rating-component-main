@@ -1,0 +1,212 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: 'Overpass', sans-serif;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* Start Style */
+:root {
+  --fw-400: 400;
+  --fw-700: 700;
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light: hsl(217, 12%, 63%);
+  --medium: hsl(216, 12%, 54%);
+  --dark_blue: hsl(213, 20%, 18%);
+  --Vdark_blue: hsl(216, 12%, 8%);
+}
+
+body {
+
+  background-color: var(--Vdark_blue);
+
+
+}
+
+.card {
+  width: 330px;
+  height: 400px;
+  background: hsl(216deg 21.78% 18.1% / 63%);
+  border-radius: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+
+
+}
+
+.card .container {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card .container .icon_star {
+  display: flex;
+  align-items: center;
+}
+
+.card .container .icon_star img {
+  background-color: var(--dark_blue);
+  padding: .9rem;
+  border-radius: 50%;
+  user-select: none;
+
+}
+
+.contact {
+  margin-top: 1.6rem;
+}
+
+.contact h1 {
+  color: var(--white);
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+}
+
+.contact p {
+  color: var(--light);
+  font-size: 1rem;
+  margin-top: .7rem;
+  line-height: 1.5;
+}
+
+.num_list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_select {
+  background-color: var(--dark_blue);
+  outline: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  transition: all .3s linear;
+  user-select: none;
+}
+.btn_select:hover{
+  background-color: var(--medium);
+}
+.active {
+  background-color: var(--orange);
+}
+.submit {
+  margin-top: 2rem;
+}
+
+.submit button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  transition: all .3s linear;
+}
+.submit button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  color: var(--white);
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
